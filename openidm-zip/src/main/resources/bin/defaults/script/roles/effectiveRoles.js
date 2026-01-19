@@ -75,7 +75,7 @@
      * @returns false if temporal constraints are defined and don't include the current time instant, true otherwise.
      */
     function processConstraints(object) {
-        if (object.temporalConstraints !== undefined && object.temporalConstraints.length) {
+        if (object.temporalConstraints != null && object.temporalConstraints.length) {
             // Loops through constraints
             for (index in object.temporalConstraints) {
                 var constraint = object.temporalConstraints[index];
